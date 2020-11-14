@@ -14,7 +14,7 @@ Follow the guide up until you have installed macOS on your USB (Make sure to use
 ## Kexts I didn't add
 
 - AppleALC.kext - This kext allows your audio to work. This should work by default on ALC269 (if you have that). ~~This may also require you to modify your config.plist.~~ I added `alcid=1` to the boot args. I forgot to add this, but now audio should work (System Preferences -> Sound -> Output -> Internal Speakers/Headphones)
-- ~~WiFi/Ethernet kexts - Other people might have different WiFi/Ethernet. I have an Archer T4U V3, but you might not have that.~~ I have added the IntelMausi.kext, an Ethernet LAN driver for macOS (my Optiplex has 82579LM).
+- WiFi/Ethernet kexts - ~~Other people might have different WiFi/Ethernet. I have an Archer T4U V3, but you might not have that.~~ I have added the IntelMausi.kext, an Ethernet LAN driver for macOS (my Optiplex has 82579LM).
 
 ## config.plist - Use [ProperTree](https://github.com/corpnewt/ProperTree)
 
