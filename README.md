@@ -25,7 +25,9 @@ Follow the guide up until you have installed macOS on your USB (Make sure to use
 Ethernet should be working. You can’t use USB tethering on your phone for this, as this will not work. You must use an Ethernet cable during installation. WiFi will not work until you have installed macOS and the driver required for your wireless adapter/card. You could also create a full macOS installer on your USB by creating a macOS virtual machine, and installing it from that to your USB. This way, you will not need an internet connection during installation.
 
 ## Post Install
-After installing macOS, you are not done. There are issues with Ivy Bridge CPUs connecting to Apple's XCPM (Xnu CPU Power Management). I have already modified the config.plist `ACPI -> Delete` tables, but you will need to use [ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh). There may be other things you have to do after installation See here -> [Post Install](https://dortania.github.io/OpenCore-Desktop-Guide/post-install/). (This is optional, but probably recommended. I have not done anything and macOS is working flawlessly).
+After installing macOS, you are not done. There are issues with Ivy Bridge CPUs connecting to Apple's XCPM (Xnu CPU Power Management). I have already modified the config.plist `ACPI -> Delete` tables, but you will need to use [ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh). There may be other things you have to do after installation See here -> [Post Install](https://dortania.github.io/OpenCore-Desktop-Guide/post-install/). 
+
+(This is optional, but probably recommended. I have not done anything and macOS is working flawlessly).
 
 ### Sources
 
