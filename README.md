@@ -3,7 +3,7 @@ If macOS is not working, make sure that you change iMac14,4 to iMac13,1 in confi
 - PlatformInfo -> Generic -> SystemProductName, changing `iMac14,4` to `iMac13,1`
 
 ## What's working
-- WiFi/Ethernel
+- WiFi/Ethernet
 - Graphics Acceleration
 - USB ports (but not all)
 - Audio (might have to set in macOS: System Preferences -> Sound -> Output)
