@@ -1,22 +1,22 @@
 # Dell-Optiplex-7010-Hackintosh-OpenCore
 If macOS is not working, make sure that you change iMac14,4 to iMac13,1 in config.plist. I am not sure if iMac14,4 SMBIOS works for versions of macOS older than Big Sur:
-- PlatformInfo -> Generic -> SystemProductName, changing `iMac14,4` to `iMac13,1`
+- PlatformInfo -> Generic -> SystemProductName, changing `iMac14,4` to `iMac13,1`.
 
 ## What's working
 - WiFi/Ethernet
 - Graphics Acceleration
 - USB ports (but not all)
-- Audio (might have to set in macOS: System Preferences -> Sound -> Output)
+- Audio (might have to set in macOS: System Preferences -> Sound -> Output).
 
 ## What isn't working
-- Sleep (not working correctly, once woken from sleep macOS will most likely freeze.)
+- Sleep (not working correctly, once woken from sleep macOS will most likely freeze.).
 I would recommend that you do the following in macOS:
     - System Preferences -> Energy Saver -> Tick "Prevent computer from sleeping automatically when the display is off".
-    - Set the "Computer sleep" slider to **Never** if you have that option ("Display sleep" can be left alone as that just turns off the display.)
+    - Set the "Computer sleep" slider to **Never** if you have that option ("Display sleep" can be left alone as that just turns off the display.).
 
 ## Usage
 Follow the guide up until you have installed macOS on your USB (Make sure to use `OpenCore` in `MakeInstall.py`.) Then replace everything inside `BOOT` with everything in this repo. (this assumes that you are using the recovery installer).  
-You can also use the full installer to installer macOS, and then go to [Post Install](#post-install)
+You can also use the full installer to installer macOS, and then go to [Post Install](#post-install).
 
 ## Optional (but recommended) kexts
 - SMCProcessor.kext - This kext is a VirtualSMC plugin that is used to monitor CPU temps.
@@ -33,9 +33,9 @@ Ethernet should be working. You can’t use USB tethering on your phone, as this
 This should be done after installing macOS
 - Booting without USB
     - First you need to find your computers EFI partition. To do this, open the terminal, and type `diskutil list` as shown below. ![alt text](https://i.imgur.com/ezYQPhk.png)
-    - Mount your EFI partition using `sudo diskutil mount /dev/diskXsY` where `X` is the disk and `Y` is the partition. For example, I would mount `/dev/disk0s2` as that is my EFI partition ![alt text](https://cdn.discordapp.com/attachments/782341614659305482/782344498700222514/unknown.png)
-    - Depending on which method you have to install macOS, you can do one of the following
-        - If you have used the full macOS installer, download this repo, unzip it, and do the following: `sudo cp -r ~/Downloads/Dell-Optiplex-7010-Hackintosh-OpenCore-master/EFI/* /Volumes/NO\ NAME/EFI`
+    - Mount your EFI partition using `sudo diskutil mount /dev/diskXsY` where `X` is the disk and `Y` is the partition. For example, I would mount `/dev/disk0s2` as that is my EFI partition. ![alt text](https://cdn.discordapp.com/attachments/782341614659305482/782344498700222514/unknown.png)
+    - Depending on which method you have to install macOS, you can do one of the following:
+        - If you have used the full macOS installer, download this repo, unzip it, and do the following: `sudo cp -r ~/Downloads/Dell-Optiplex-7010-Hackintosh-OpenCore-master/EFI/* /Volumes/NO\ NAME/EFI`.
         - If you are installing from the recovery installer, do the following: `sudo cp -r /Volumes/USB/EFI/* /Volumes/NO\ NAME/EFI`.
         - If the OpenCore bootloader does not show, make sure your [BIOS settings](https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#intel-bios-settings) are correct. If they are correct, and you are still having this problem, try to clean NVRAM by doing the following:
             - Boot macOS from your USB
