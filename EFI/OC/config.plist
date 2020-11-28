@@ -786,7 +786,7 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>DefaultBackgroundColor</key>
-				<data>v7+/AA==</data>
+				<data>AAAAAA==</data>
 				<key>UIScale</key>
 				<data>AQ==</data>
 			</dict>
@@ -871,7 +871,7 @@
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMac13,1</string>
+			<string>iMac14,4</string>
 			<key>SystemSerialNumber</key>
 			<string>C02J23Z8DNCT</string>
 			<key>SystemUUID</key>
