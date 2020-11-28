@@ -34,7 +34,7 @@ This should be done after installing macOS
 - Booting without USB
     - First you need to find your computers EFI partition. To do this, open the terminal, and type `diskutil list` as shown below. ![alt text](https://i.imgur.com/ezYQPhk.png)
     - Mount your EFI partition using `sudo diskutil mount /dev/diskXsY` where `X` is the disk and `Y` is the partition. For example, I would mount `/dev/disk0s2` as that is my EFI partition. ![alt text](https://cdn.discordapp.com/attachments/782341614659305482/782344498700222514/unknown.png)
-    - Depending on which method you have to install macOS, you can do one of the following:
+    - Depending on which method you have used to install macOS, you can do one of the following:
         - If you have used the full macOS installer, download this repo, unzip it, and do the following: `sudo cp -r ~/Downloads/Dell-Optiplex-7010-Hackintosh-OpenCore-master/EFI/* /Volumes/NO\ NAME/EFI`.
         - If you are installing from the recovery installer, do the following: `sudo cp -r /Volumes/USB/EFI/* /Volumes/NO\ NAME/EFI`.
         - If the OpenCore bootloader does not show, make sure your [BIOS settings](https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#intel-bios-settings) are correct. If they are correct, and you are still having this problem, try to clean NVRAM by doing the following:
