@@ -9,7 +9,7 @@ If macOS is not working, make sure that you change iMac14,4 to iMac13,1 in confi
 - Audio (might have to set in macOS: System Preferences -> Sound -> Output)
 
 ## What isn't working
-- Sleep (not working correctly, once woken from sleep, macOS will most likely freeze.)
+- Sleep (not working correctly, once woken from sleep macOS will most likely freeze.)
 I would recommend that you do the following:
     - Settings -> Energy Saver -> Tick "Prevent computer from sleeping automatically when the display is off".
     - Set the "Computer sleep" slider to **Never** if you have that (Display sleep can be left alone as that just turns off the display, but the PC doesn't.)
