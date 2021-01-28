@@ -12,7 +12,8 @@ If macOS is not working, make sure that you change iMac14,4 to iMac13,1 in confi
 - Sleep (not working correctly, once woken from sleep macOS will most likely freeze.).
 I would recommend that you do the following in macOS:
     - System Preferences -> Energy Saver -> Tick "Prevent computer from sleeping automatically when the display is off".
-    - Set the "Computer sleep" slider to **Never** if you have that option ("Display sleep" can be left alone as that just turns off the display.).
+    - Set the "Computer sleep" slider to **Never** if you have that option ("Display sleep" can be left alone as that just turns off the display).
+    - UPDATE: it might work sometimes if you got lucky. I would try out Sleep before you disable it and see if it works.
 
 ## Usage
 Follow the guide up until you have installed macOS on your USB (Make sure to use `OpenCore` in `MakeInstall.py`.) Then replace everything inside `BOOT` with everything in this repo. (this assumes that you are using the recovery installer).  
