@@ -24,7 +24,7 @@ You can also use the full installer to installer macOS, and then go to [Post Ins
 
 ## config.plist - Use [ProperTree](https://github.com/corpnewt/ProperTree)
 - Language
-    - `NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> prev-lang:kbd` - The value of this is HEX encoded. You will need to find the HEX for your language. This should be in the format of `lang-COUNTRY:keyboard`. For example. because I'm in the UK, I have set this to `en-GB:0`. You will need to specify your country here [HEX Encoder](https://www.convertstring.com/EncodeDecode/HexEncode), and replace the value with the HEX you are given. If the language on the macOS installer doesn't change, go to your macOS installer, press space and select "CleanNvram.efi", then the language should change.
+    - `NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> prev-lang:kbd` - The value of this is HEX encoded. You will need to find the HEX for your language. This should be in the format of `lang-COUNTRY:keyboard`. For example. because I'm in the UK, I have set this to `en-GB:0`. You will need to specify your country here [HEX Encoder](https://www.convertstring.com/EncodeDecode/HexEncode), and replace the value with the HEX you are given. If the language on the macOS installer doesn't change, boot to your USB (which has OpenCore), press space and select "CleanNvram.efi", then the language should change.
 
 ## Networking
 Ethernet should be working. You can’t use USB tethering on your phone, as this will not work. You must use an Ethernet cable during installation. WiFi will not work until you have installed macOS and the driver required for your wireless adapter/card. You could also create a full macOS installer on your USB by creating a macOS virtual machine, and installing it from that to your USB. This way, you will not need an internet connection during installation.
@@ -38,9 +38,9 @@ This should be done after installing macOS
         - If you have used the full macOS installer, download this repo, unzip it, and do the following: `sudo cp -r ~/Downloads/Dell-Optiplex-7010-Hackintosh-OpenCore-master/EFI/* /Volumes/NO\ NAME/EFI`.
         - If you are installing from the recovery installer, do the following: `sudo cp -r /Volumes/USB/EFI/* /Volumes/NO\ NAME/EFI`.
         - If the OpenCore bootloader does not show, make sure your [BIOS settings](https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#intel-bios-settings) are correct. If they are correct, and you are still having this problem, try to clean NVRAM by doing the following:
-            - Boot macOS from your USB
+            - boot to your USB (which has OpenCore)
             - Press space
-            - Select "CleanNvram.efi". Unplug your USB and check boot options. You should see OpenCore.
+            - Select "CleanNvram.efi". Unplug your USB and check boot options. You should now have OpenCore bootloader from your EFI!
 
 There are also other things you can do after installing macOS. If you would like to do anything else such as fixing your USB ports, you can do so here [Post Install](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide). I have not done much here, since I am fine with how macOS is working for me.
 
