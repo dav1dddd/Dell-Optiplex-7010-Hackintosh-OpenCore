@@ -1,5 +1,6 @@
 # Dell-Optiplex-7010-Hackintosh-OpenCore
-Compatible with Mountain Lion - Big Sur
+If macOS is not working, make sure that you change iMac14,4 to iMac13,1 in config.plist. I am not sure if iMac14,4 SMBIOS works for versions of macOS older than Big Sur (it does, just do this if you have any problems):
+- PlatformInfo -> Generic -> SystemProductName, changing `iMac14,4` to `iMac13,1`.
 
 ## What's working
 - WiFi/Ethernet
