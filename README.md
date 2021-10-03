@@ -15,7 +15,7 @@ I would recommend that you do the following in macOS:
     - UPDATE: it might work sometimes if you got lucky. I would try out Sleep before you disable it and see if it works and doesn't crash macOS.
 
 ## Supported graphics
-The fastest processor for this PC is the i7-3770 because the motherboard has a Q77 chipset. All of these processors should be supported on this PC https://www.cpu-upgrade.com/mb-Intel_(chipsets)/Q77_Express.html, it is best to use a processor that has HD 4000 graphics, because HD 4000 is supported on Big Sur.
+The fastest processor for this PC is the i7-3770 because the motherboard has a Q77 chipset. All of these processors should be supported on this PC https://www.cpu-upgrade.com/mb-Intel_(chipsets)/Q77_Express.html, it is best to use a processor that has HD 4000 graphics, because HD 4000 is supported on Big Sur. I wouldn't recommend anything lower than HD 4000 for a Hackintosh.
 
 ## Usage
 Follow the guide up until you have installed macOS on your USB (Make sure to use `OpenCore` in `MakeInstall.py`.) Then replace everything inside `BOOT` with everything in this repo. (this assumes that you are using the recovery installer).  
