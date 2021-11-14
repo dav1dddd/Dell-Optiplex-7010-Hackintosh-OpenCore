@@ -1,6 +1,8 @@
 # Dell-Optiplex-7010-Hackintosh-OpenCore
 Works from Mountain Lion - Big Sur
 
+For macOS Monterey click [here](https://github.com/dav1dnix/Dell-Optiplex-7010-Hackintosh-OpenCore/tree/monterey), I have made it a separate branch for now.
+
 ## What's working
 - WiFi/Ethernet
 - Graphics Acceleration
